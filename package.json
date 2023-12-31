@@ -1,23 +1,20 @@
 {
   "name": "canvas-engines-comparison",
-  "version": "1.0.0",
-  "main": "src/pages/pixi.pug",
+  "version": "0.0.1",
+  "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slaylines/canvas-engines-comparison.git"
+    "url": "git+https://github.com/plisdku/canvas-comparisons.git"
   },
-  "author": "slay_lines",
+  "author": "plisdku",
   "license": "MIT",
   "scripts": {
-    "start": "parcel serve src/pages/pixi.pug --open",
-    "build": "parcel build src/pages/pixi.pug --no-source-maps",
-    "deploy": "yarn build && yarn copy",
-    "copy": "source .env && rsync -qazP $DEPLOY_FILES $DEPLOY_TARGET"
+    "start": "http-server public"
   },
   "dependencies": {
-    "@next2d/player": "^1.16.0",
     "@createjs/easeljs": "^2.0.0-beta.4",
     "@mesh.js/core": "^1.1.23",
+    "@next2d/player": "^1.16.0",
     "@svgdotjs/svg.js": "^3.1.1",
     "canvaskit-wasm": "^0.30.0",
     "fabric": "^4.6.0",
@@ -38,15 +35,15 @@
     "browserslist": "^4.17.0"
   },
   "devDependencies": {
+    "http-server": "^14.1.1",
     "prettier": "2.4.1",
-    "pug": "3.0.2"
   },
   "browserslist": [
     "last 2 Chrome versions"
   ],
   "bugs": {
-    "url": "https://github.com/slaylines/canvas-engines-comparison/issues"
+    "url": "https://github.com/plisdku/canvas-comparisons/issues"
   },
-  "homepage": "https://github.com/slaylines/canvas-engines-comparison#readme",
+  "homepage": "https://github.com/plisdku/canvas-comparisons",
   "description": "PCH version of the awesome canvas engines comparison"
 }
