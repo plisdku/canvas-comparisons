@@ -107,6 +107,35 @@ main {
 /*	margin: 20px 8%;*/
 }
 
+main .row {
+	display: flex;
+	flex-direction: row;
+}
+
+main .col {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 25%;
+	margin: 0 10px;
+}
+
+#engine {
+	height: 400px;
+	width: 800px;
+	background: white;
+	box-shadow: 0 0 20px rgba(0,0,0,0.7) inset;
+/*	border: 2px solid red;*/
+}
+
+#meter {
+	display: block;
+	margin: 20px auto;
+	height: 50px;
+	width: 100px;
+	background: white;
+	box-shadow: 0 0 20px rgba(0,0,0,0.7) inset;
+}
+
 /* Footer */
 
 footer {
@@ -120,6 +149,8 @@ footer {
 footer h2 {
 	color: #777;
 	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 400;
 }
 
 footer .row {
