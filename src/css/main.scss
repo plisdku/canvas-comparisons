@@ -1,0 +1,110 @@
+$background: #000;
+$netflix-red: #db0001;
+$color: white;
+
+
+/* Font */
+
+@font-face {
+	font-family: Poppins;
+	font-weight: 600;
+	src: url(../assets/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+	font-family: Poppins;
+	font-weight: 500;
+	src: url(../assets/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+	font-family: Poppins;
+	font-weight: 400;
+	src: url(../assets/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+	font-family: Poppins;
+	font-weight: 300;
+	src: url(../assets/Poppins/Poppins-Light.ttf);
+}
+
+
+/* Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+/* ==== Styling ==== */
+
+
+/* Header */
+
+.logo {
+	cursor: pointer;
+	width: 150px;
+}
+
+.header {
+	padding: 10px 8%;
+}
+
+.header-content h1 {
+	font-size: 60px;
+	line-height: 70px;
+	font-weight: 600;
+	max-width: 650px;
+}
+
+.header-content h3 {
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+
+nav button {
+	border: 0;
+	outline: 0;
+	background: $netflix-red;
+	color: white;
+	padding: 7px 20px;
+	border-radius: 4px;
+	margin-left: 10px;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+nav a {
+	display: inline-flex;
+	border: 1px solid #fff;
+	padding: 7px 20px;
+	background: transparent;
+	font-size: 12px;
+	margin-left: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+
+
+body {
+	background: $background;
+	color: $color;
+}
+
+.meter {
+	box-sizing: content-box;
+	background: black;
+}
