@@ -3,7 +3,7 @@ import "fpsmeter";
 class Engine {
 	constructor() {
 		this.content = document.querySelector("main");
-		this.meterContainer = this.content.querySelector(".meter")
+		this.meterContainer = this.content.querySelector("#meter")
 
 		console.log("Meter container:", this.meterContainer)
 
@@ -12,11 +12,11 @@ class Engine {
 
 	initFpsmeter() {
 		this.meter = new window.FPSMeter(this.meterContainer, {
-			graph: 1,
+			graph: 0,
 			position:"relative",
 			maxFps: 10,
 			// heat: 1,
-			// theme: "light",
+			theme: "dark",
 			// history: 25,
 			// top: 0,
 			// bottom: 40,

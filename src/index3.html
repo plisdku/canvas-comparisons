@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Another general structure</title>
 	<link rel="stylesheet" href="css/main3.scss">
+	<script src="js/main.js" type="module" defer></script>
 </head>
 <body>
 
@@ -13,6 +14,7 @@
 			<nav>
 				<img src="assets/images/logo.png" alt="Netflix Logo" class="logo">
 				<div>
+					<button id="dom-button">DOM</button>
 					<button id="two-js-button">Two.js</button>
 					<button id="three-js-button">Three JS</button>
 					<button id="webgl-button">WebGL</button>
@@ -30,9 +32,13 @@
 					<p>This is the main section of my webpage.</p>
 					<div id="meter"></div>
 					<p>You may notice my skill.</p>
+					<form action="" class="count-form">
+						<input type="text" inputmode="numeric" class="count-input" placeholder="Num boxes">
+						<button type="submit" class="count-reset">Reset</button>
+					</form>
 				</div>
 				<div class=col>
-					<div id="engine"></div>
+					<div id="canvas"></div>
 				</div>
 			</div>
 		</main>

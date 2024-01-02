@@ -1,8 +1,12 @@
-// console.log("the variable:", global.TYPED_ARRAY_SUPPORT);
 import _ from "lodash";
 import Engine from "./engine";
 
 document.addEventListener("DOMContentLoaded", function() {
+	
+	// Need to know which engine it is
+	// Need to start with DOM
+	// Need the buttons to somehow make a new Engine
+
 	const engine = new Engine();
 	// call other methods or add additional setup here if needed
 
@@ -10,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	localStorage.clear();
 
-	h1 = document.querySelector("h1");
+	h1 = document.querySelector("#canvas");
 	h1.addEventListener("click", function() {
 		console.log("Clicked!");
 
