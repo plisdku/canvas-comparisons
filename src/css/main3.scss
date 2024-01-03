@@ -158,8 +158,27 @@ main .col {
 /*	border: 2px solid red;*/
 }
 
+#controls {
+/*	border-radius: 4px;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+/*	overflow: hidden;*/
+}
+
+#start, #stop {
+/*	flex: 0;*/
+/*	display: inline-block;*/
+	color: white;
+	border: 1px solid white;
+	padding: 7px 20px;
+/*	margin-left: 20px;*/
+	background: none;
+}
+
 #meter {
 /*	display: block;*/
+/*	display: inline-block;*/
 	margin: 20px auto;
 	/*height: 50px;
 	width: 100px;
