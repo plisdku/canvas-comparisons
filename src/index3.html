@@ -42,7 +42,10 @@
 					</form>
 				</div>
 				<div class=col>
-					<div id="canvas"></div>
+					<!-- Foo (pos relative, size == canvas) and canvas (pos absolute), so clipping to canvas works -->
+					<div class="foo">
+						<div id="canvas"></div>
+					</div>
 				</div>
 			</div>
 		</main>

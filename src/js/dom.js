@@ -15,7 +15,6 @@ class DOMEngine extends Engine {
 			this.request = requestAnimationFrame(() => this.animate())
 		})
 
-
 		this.inputField.addEventListener("input", () => {
 			this.initRectangles(this.inputField.value)
 		})
@@ -27,7 +26,7 @@ class DOMEngine extends Engine {
 		})
 
 		let numRects = this.inputField.value || 10
-		initRectangles(numRects)
+		this.initRectangles(numRects)
 	}
 
 	initRectangles(numRects) {
@@ -35,6 +34,11 @@ class DOMEngine extends Engine {
 		// Set up the rectangle drawing stuff
 		this.rects = [];
 		this.canvas.innerHTML = ""
+
+		let width = this.canvas.clientWidth
+		let height = this.canvas.clientHeight
+
+		console.log("Canvas size:", width, height)
 
 		for (let ii = 0; ii < numRects; ii++) {
 			let r = document.createElement("div")
@@ -49,18 +53,17 @@ class DOMEngine extends Engine {
 			r.style.transform = `translate(${x}px, ${y}px)`
 			this.rects.push({x, y, size, element: r})
 			this.canvas.appendChild(r)
-			console.log(ii)
 		}
 	}
 
 
 	animate() {
-		console.log("Frame count:", this.frameCount++);
+		// console.log("Frame count:", this.frameCount++);
 
 		this.rects.forEach((record, index) => {
 			record.x -= 10;
-			if (record.x < 0) {
-				record.x = 500;
+			if (record.x + record.size < 0) {
+				record.x = this.canvas.clientWidth;
 			}
 			record.element.style.transform = `translate(${record.x}px, ${record.y}px`
 		})

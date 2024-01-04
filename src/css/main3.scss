@@ -150,11 +150,19 @@ main .col {
 	transform: translateY(2px);
 }
 
+.foo {
+	height: 400px;
+	width: 800px;
+	position: relative;
+}
+
 #canvas {
 	height: 400px;
 	width: 800px;
 	background: white;
 	box-shadow: 0 0 20px rgba(0,0,0,0.7) inset;
+	overflow: clip;
+	position: absolute;
 /*	border: 2px solid red;*/
 }
 
@@ -185,6 +193,11 @@ main .col {
 	background: white;*/
 /*	box-shadow: 0 0 20px rgba(0,0,0,0.7) inset;*/
 }
+
+.rectangle {
+	background: white;
+}
+
 
 /* Footer */
 
